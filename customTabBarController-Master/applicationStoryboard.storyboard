@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hlk-pU-Pu4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--应用-->
+        <scene sceneID="VoL-64-K28">
+            <objects>
+                <viewController id="0aC-AG-qEe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vYo-Yh-5LG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nmt-7i-Wzc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CXO-If-OVE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应用" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg8-tD-goW">
+                                <rect key="frame" x="238" y="265" width="124" height="70"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="7PG-Xo-YKz"/>
+                                    <constraint firstAttribute="height" constant="70" id="Zgh-p9-Jf1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" red="1" green="0.053318492019999997" blue="0.019340921489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Eg8-tD-goW" firstAttribute="centerY" secondItem="CXO-If-OVE" secondAttribute="centerY" id="5kE-A0-Qjk"/>
+                            <constraint firstItem="Eg8-tD-goW" firstAttribute="centerX" secondItem="CXO-If-OVE" secondAttribute="centerX" id="GFx-qz-A2P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="应用" id="0dz-QB-Yma"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fM-hi-2Dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489" y="445"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="boQ-zE-yUn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hlk-pU-Pu4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WmD-rh-KXV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0aC-AG-qEe" kind="relationship" relationship="rootViewController" id="naa-dC-R1i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wf6-6V-4AF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="445"/>
+        </scene>
+    </scenes>
+</document>
